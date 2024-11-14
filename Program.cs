@@ -1,4 +1,6 @@
-﻿int opcion = 0;
+﻿using T3;
+
+int opcion = 0;
 do{
     Console.WriteLine("--- Menú de opciones ---");
     Console.WriteLine("1) Crear cita");
@@ -9,10 +11,13 @@ do{
     opcion = int.Parse(Console.ReadLine());
     switch (opcion){
         case 1:
+            CitaUtil.crearcita(citas, ref count);
             break;
         case 2:
+            CitaUtil.listarcitas(citas, count);
             break;
         case 3:
+            CitaUtil.modificar(citas, count);
             break;
         case 4:
             Console.WriteLine("Fin del programa");
