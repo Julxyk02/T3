@@ -1,5 +1,6 @@
 ﻿using T3;
-
+Cita[] citas = new Cita[0];
+int count = 0;
 int opcion = 0;
 do{
     Console.WriteLine("--- Menú de opciones ---");
